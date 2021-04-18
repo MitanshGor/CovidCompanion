@@ -1,0 +1,25 @@
+use hacknuthon;
+
+create table HospitalDetail
+(
+	HospId int primary key auto_increment,
+	Name varchar(40) not null ,
+	Email varchar(40) not null ,
+	password varchar(40) not null ,
+	contactNo varchar(15) not null ,
+	Address varchar(100) not null ,
+	City varchar(20) not null ,
+	Pincode int not null 
+);
+
+create table HospitalBedDetail(
+	 id int ,
+	TotalIsolation int NOT NULL,VacentIsolation int NOT NULL,
+	TotalHDU int NOT NULL,VacentHDU int NOT NULL,
+	TotalICUV int NOT NULL,VacentICUV int NOT NULL,
+	TotalICUNV int NOT NULL,VacentICUNV int NOT NULL,
+	Total int , TotalVacent int,
+	FOREIGN KEY (id) REFERENCES HospitalDetail(HospId)
+);
+
+
