@@ -90,7 +90,7 @@
 	<div class="row align-center"  style="background-color: #32BA92;">				  
 		<div class="col-7">
 			<img src="Images/lungblue1.jpg" alt="Logo Image" width="230px" height="100px">
-			<a href="Home.jsp"  class=""><span class="AppName">Covid Companion</span></a>
+			<a href="index.jsp"  class=""><span class="AppName">Covid Companion</span></a>
 		</div>
 		<div class="col-5 align-self-center">		
 			  <div class="toggleArea">
