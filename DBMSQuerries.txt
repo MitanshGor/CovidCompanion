@@ -22,4 +22,62 @@ create table HospitalBedDetail(
 	FOREIGN KEY (id) REFERENCES HospitalDetail(HospId)
 );
 
+CREATE TABLE `experiance` (
+  `age` int NOT NULL,
+  `Name` varchar(30) NOT NULL,
+  `Experiance` text NOT NULL,
+  `background` int DEFAULT NULL,
+  `mobileNo` varchar(13) DEFAULT NULL,
+  `email` varchar(33) DEFAULT NULL
+);
 
++----------------------+
+| Tables_in_hacknuthon |
++----------------------+
+| experiance           |
+| hospitalbeddetail    |
+| hospitaldetail       |
++----------------------+
+
+mysql> desc experiance;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| age        | int         | NO   |     | NULL    |       |
+| Name       | varchar(30) | NO   |     | NULL    |       |
+| Experiance | text        | NO   |     | NULL    |       |
+| background | int         | YES  |     | NULL    |       |
+| mobileNo   | varchar(13) | YES  |     | NULL    |       |
+| email      | varchar(33) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+mysql> desc hospitalbeddetail;
++-----------------+------+------+-----+---------+-------+
+| Field           | Type | Null | Key | Default | Extra |
++-----------------+------+------+-----+---------+-------+
+| id              | int  | YES  | MUL | NULL    |       |
+| TotalIsolation  | int  | NO   |     | NULL    |       |
+| VacentIsolation | int  | NO   |     | NULL    |       |
+| TotalHDU        | int  | NO   |     | NULL    |       |
+| VacentHDU       | int  | NO   |     | NULL    |       |
+| TotalICUV       | int  | NO   |     | NULL    |       |
+| VacentICUV      | int  | NO   |     | NULL    |       |
+| TotalICUNV      | int  | NO   |     | NULL    |       |
+| VacentICUNV     | int  | NO   |     | NULL    |       |
+| Total           | int  | YES  |     | NULL    |       |
+| TotalVacent     | int  | YES  |     | NULL    |       |
++-----------------+------+------+-----+---------+-------+
+
+
+mysql> desc hospitaldetail;
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| HospId    | int         | NO   | PRI | NULL    | auto_increment |
+| Name      | varchar(40) | NO   |     | NULL    |                |
+| Email     | varchar(40) | NO   |     | NULL    |                |
+| password  | varchar(40) | NO   |     | NULL    |                |
+| contactNo | varchar(15) | NO   |     | NULL    |                |
+| City      | varchar(20) | NO   |     | NULL    |                |
+| Pincode   | int         | NO   |     | NULL    |                |
+| GST       | char(40)    | NO   |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
