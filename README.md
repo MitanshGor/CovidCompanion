@@ -11,3 +11,4 @@ This project is a solution to the current shortage of beds and resources due to 
 -The project is based on Java. We have used MySQL to manage the database and HTML,CSS, javascript and Bootstrap framework for the frontend of the project.
 
 -We hope that this problem can really help people and the hospital management. Through this project we want to make sure people suffering from covid can reach the right hospital at the right time.
+https://github.com/MitanshGor/CovidCompanion/blob/master/Index.jsp
