@@ -22,14 +22,15 @@ create table HospitalBedDetail(
 	FOREIGN KEY (id) REFERENCES HospitalDetail(HospId)
 );
 
-CREATE TABLE `experiance` (
-  `age` int NOT NULL,
-  `Name` varchar(30) NOT NULL,
-  `Experiance` text NOT NULL,
-  `background` int DEFAULT NULL,
-  `mobileNo` varchar(13) DEFAULT NULL,
-  `email` varchar(33) DEFAULT NULL
-);
+CREATE TABLE experiance (
+  age int NOT NULL,
+  Name varchar(30) NOT NULL,
+  Experiance text NOT NULL,
+  background int DEFAULT NULL,
+  mobileNo varchar(13) DEFAULT NULL,
+  email varchar(33) DEFAULT NULL
+)
+
 
 +----------------------+
 | Tables_in_hacknuthon |
