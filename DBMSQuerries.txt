@@ -82,3 +82,5 @@ mysql> desc hospitaldetail;
 | Pincode   | int         | NO   |     | NULL    |                |
 | GST       | char(40)    | NO   |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
+
+mysql>
